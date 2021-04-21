@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>-----</title>
+    <style>
+        body{
+          background:#f1f6ff;
+          margin:1rem;
+          text-align:center;
+          font-family:sans-serif;
+        }
+        svg{
+          background:#95c6ff;
+          box-shadow:0 0 20px #0002;
+          width:100%;
+        }
+      </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 500 500">
+        <!--ดิน-->
+        <g transform="translate(50 350)">
+            <path stroke="#f000" stroke-width="1" fill="#9D634B"
+                  d="m0 0 v10 l200 100 l200 -100 v-10 l-200 -100"/>
+            <path stroke="#f000" stroke-width="1" fill="#0002"
+                d="m0 0 v10 l200 100 l200 -100 v-10 l-200 100"/>
+        </g>
+        <!--หญ้า-->
+        <g transform="translate(50 340)">
+            <path stroke="#f000" stroke-width="1" fill="#48AF59"
+                  d="m0 0 v10 l200 100 l200 -100 v-10 l-200 -100"/>
+            <path stroke="#f000" stroke-width="1" fill="#0002"
+                d="m0 0 v10 l200 100 l200 -100 v-10 l-200 100"/>
+        </g>
+        <!--โกดังหน้า-->
+        <g transform="translate(230 290)">
+            <path stroke="#f000" stroke-width="1" fill="#AF1717"
+                  d="m0 0 v35 l70 35 v-35 l-10 -30 l-20 -20 l-20 0"/>
+        </g>
+         <!--โกดังข้าง-->
+         <g transform="translate(300 325)">
+            <path stroke="#f000" stroke-width="1" fill="#EB3434"
+                  d="m0 0 v35 l95 -47.5 v-35"/>
+        </g>
+        <!--หลังคาโกดังหน้า-->
+        <g transform="translate(270 275)">
+            <path stroke="#f000" stroke-width="1" fill="#744827"
+                  d="m0 0 l20 20 l11 32 l94 -47.5 v-2 l-22 -23 l-30 -16"/>
+        </g>
+        <!--หลังคาโกดังหลัง-->
+        <g transform="translate(230 290)">
+            <path stroke="#f000" stroke-width="1" fill="#5F3C22"
+                  d="m0 0 l20 -15 l20 0 l73.5 -36.5 l-20 0 l-75 36 l-22 15"/>
+        </g>
+        <line x1="230" y1="290" x2="299.5" y2="326" style="stroke:#E1DDDB;stroke-width:2" />
+        <!--หลังคาโกดังหลัง-->
+        <g transform="translate(230 345)">
+            <path stroke="#f000" stroke-width="1" fill="#E9BFA0"
+                d="m0 0 l7 -5 l4 0 l6 6 l-5 3 l-2 3 l-5 1"/>
+            <path stroke="#f000" stroke-width="1" fill="#E9BFA0"
+                d="m-35 35 l7 -5 l4 0 l6 6 l-5 3 l-2 3 l-5 1"/>
+            <path stroke="#f000" stroke-width="1" fill="#E9BFA0"
+                d="m-5 15 l2 -7 l4 0 l3 3 l-2.5 6"/>
+            <path stroke="#f000" stroke-width="1" fill="#E9BFA0"
+                d="m-50 40 l2 -7 l4 0 l3 3 l-2.5 6"/>
+            <path stroke="#f000" stroke-width="1" fill="#E9BFA0"
+                d="m-28 20 l2 -6 l10 -5 l6 6 l1 3 l-2 8 l-10 1"/>
+        </g>
+        <!--หลังคาโกดังหน้า-->
+        <g transform="translate(100 275)">
+            <path stroke="#f000" stroke-width="1" fill="#6C6967"
+                d="m0 0 l-2 14 l12 6 l16 -5 l4 -7 l-1 -10 l"/>
+            <path stroke="#f000" stroke-width="1" fill="#C8C8C8"
+                d="m3 -10 l5 -50 l20 -5 l-10 -10"/>
+        </g>
+
+
+      <!--grid-->
+      <defs>
+        <pattern id="isometric" width="20" height="10" viewBox="0 0 10 5" patternUnits="userSpaceOnUse" x="0" y="0" >
+            <g stroke="#0004" stroke-dasharray="2 1" stroke-width=".25">
+              <path d="m0,0 v100"/>
+              <path d="m10,0 v100"/>
+            </g>
+            <path d="m5,0 v100" stroke-width=".25" stroke="#0004" stroke-dasharray=".5"/>
+            <g stroke-width=".25" stroke="#0004">
+              <path d="m0,0 l10,5"/>
+              <path d="m10,0 l-10,5"/>
+            </g>
+          </pattern>
+          </defs>
+        <rect fill="url(#isometric)" width="1000" height="1000"/> -->
+    </svg>
+  </body>
+</html>
