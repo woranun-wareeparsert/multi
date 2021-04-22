@@ -27,9 +27,19 @@
             margin: 10px;
             left: 100px;
         }
-      </style>
+      .sun{
+			width:80px;
+        height:80px;
+        background: #F95B2A;
+        border-radius: 100%;
+        position: absolute;
+        left: 70vw;
+        top: 25vw;
+      }
+    </style>
   </head>
   <body>
+    <div class="sun"></div>
     <button class="night" onclick="changenight()">night</button>
     <button class="morning" onclick="changemorning()">morning</button>
     <svg viewBox="0 0 500 500"> 
@@ -84,6 +94,10 @@
         		<path stroke="#23BD44" stroke-linecap="round" stroke-width="1" fill="#0000" d="m10.5 8.5 q4 1 3 7"/>
           <path stroke="#23BD44" stroke-linecap="round" stroke-width="1" fill="#0000" d="m17 8.5 q-4 1 -3 6"/>
         </g>
+        <g id="ผัก">
+          <circle cx="18" cy="6" r="3.5" fill="#F87C00" />
+        		<path stroke="#297B3A" stroke-linecap="round" stroke-width="1" fill="#0000" d="m17 2 q1 1 1 2"/>
+        </g>
         
         <g id="ลูกเจี๊ยบ">
         		<circle cx="247" cy="414" r="5" fill="#F4D45B" />
@@ -92,8 +106,24 @@
         		<path d="m245.5 414 l1 3 l1 -3 " stroke="-"
   stroke-width="-" fill="#D28921" />
         </g>
-        
+        <g id="ควัน">
+        	<circle cx="25" cy="6" r="2" fill="#707070" />
+          <circle cx="27" cy="5.5" r="2" fill="#707070" />
+          <circle cx="26" cy="8" r="2" fill="#707070" />
+          <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" repeatCount="indefinite"/>
+        </g>
       </defs>
+      <!--เมฆ-->
+        <g transform="translate(60 210)">
+            <path stroke="#A6AEA8" stroke-width="1" fill="#C5CBC6"
+                  d="m0 0 q-15 20 10 10 q50 -25 20 -25 q-5 -15 -15 5 q-20 -10 -15 10"/>
+          <path stroke="#A6AEA8" stroke-width="1" fill="#C5CBC6"
+                  d="m90 -45 q-15 20 10 10 q50 -25 20 -25 q-5 -15 -15 5 q-20 -10 -15 10"/>
+          <path stroke="#A6AEA8" stroke-width="1" fill="#C5CBC6"
+                  d="m25 -65 q-15 20 10 10 q50 -25 20 -25 q-5 -15 -15 5 q-20 -10 -15 10"/>
+          <path stroke="#A6AEA8" stroke-width="1" fill="#C5CBC6"
+                  d="m235 -70 q-30 0 5 15 q45 20 25 -5 q5 -20 -15 -10 q-10 -20 -15 0"/>
+        </g>
         <!--ดิน-->
         <g transform="translate(50 350)">
             <path stroke="#f000" stroke-width="1" fill="#9D634B"
@@ -171,20 +201,25 @@
                 d="m0 0 l-2 14 l12 6 l16 -5 l4 -7 l-1 -10 l-4 -4"/>
             <path stroke="#f000" stroke-width="1" fill="#C8C8C8"
                 d="m1 3 l5 -50 l13 -0 l8.5 45 l-5 7 l-10 3"/>
-        </g>
-      <!--บ่อน้ำ-->
-        <g transform="translate(390 335)">
-            <path stroke="#f000" stroke-width="1" fill="#6C6967"
-                d="m0 0 l-2 14 l12 6 l16 -5 l4 -7 l-1 -10 l-4 -4"/>
-            <path stroke="#f000" stroke-width="1" fill="#C8C8C8"
-                d="m1 3 l5 -50 l13 -0 l8.5 45 l-5 7 l-10 3"/>
-        </g>
+      </g>
 			<!--ฟามหน้า-->
         <g transform="translate(230 345)">
           <circle cx="17" cy="71" r="16" fill="#DAA777" />
           <circle cx="39" cy="60" r="16" fill="#DAA777" />
         <use href="#เส้นกำแพง" x="-30" y="67" />
           <use href="#เส้นกำแพง2" x="40" y="32" />
+          <use href="#ผัก" x="-10" y="60" />
+          <use href="#ผัก" x="0" y="65" />
+          <use href="#ผัก" x="0" y="75" />
+          <use href="#ผัก" x="0" y="55" />
+          <use href="#ผัก" x="-10" y="69" />
+          <use href="#ผัก" x="12" y="65" />
+          <use href="#ผัก" x="12" y="54" />
+          <use href="#ผัก" x="17" y="45" />
+          <use href="#ผัก" x="22" y="55" />
+          <use href="#ผัก" x="23" y="65" />
+          <use href="#ผัก" x="32" y="55" />
+          <use href="#ผัก" x="28" y="45" />
         </g>
       <!--ฟามหลัง-->
         <g transform="translate(155 305)">
@@ -218,7 +253,7 @@
   stroke-width="-" fill="#FCC74A" />
       </g>
       <!--ไก่-->
-      <g transform="translate(90,-40)">
+      <g transform="translate(80,-39)">
         <path d="m262 396 l1 -6 l3 5" stroke="-"
   stroke-width="-" fill="#f00" />
         <path d="m264 396 l2 -6 l3 5" stroke="-"
@@ -239,22 +274,29 @@
       </g>
       <!--รถ-->
       <g transform="translate(150 360)">
-        <path stroke="#f000" stroke-width="1" fill="#D9741B"
+        <path stroke="#f000" stroke-width="1" fill="#C4270C"
           d="m19 -11.5 v8 l12 6 l26 -13 v-8 l-13 -6"/>
         <path stroke="#f000" stroke-width="1" fill="#0002"
     			d="m19 -11.5 v8 l12 5 l26 -12 v-8 l-25 13"/>
         <path stroke="#f000" stroke-width="1" fill="#0003"
     			d="m19 -11.5 l6 3 l20 -10 l6 3 l5 -3 l-13 -6"/>
-        <path stroke="#f000" stroke-width="1" fill="#D9741B"
+        <path stroke="#f000" stroke-width="1" fill="#C4270C"
           d="m-4 2 v6 l12 6 l16 -8 v-6 l-13 -6"/>
-        <path stroke="#f000" stroke-width="1" fill="#D9741B"
+        <path stroke="#f000" stroke-width="1" fill="#C4270C"
           d="m4 -8 v12 l12 6 l16 -8 v-12 l-13 -6"/>
         <path stroke="#f000" stroke-width="1" fill="#0002"
     			d="m4 -8 v7 l11 5 v-7"/>
+        <path stroke="#f000" stroke-width="1" fill="#83827E"
+    			d="m6 -6 v4 l8 4 v-4"/>
         <path stroke="#f000" stroke-width="1" fill="#0002"
     			d="m-4 2 v7 l11 5 l25 -12 v-12 l-17 7 v7 l-7 4"/>
         <circle cx="25" cy="6" r="4" fill="#707070" />
         <circle cx="49" cy="-6" r="4" fill="#707070" />
+        <circle cx="0" cy="7" r="1.5" fill="#E4B131" />
+        <circle cx="5" cy="9" r="1.5" fill="#E4B131" />
+        <use href="#ควัน" x="40" y="-23" />
+        <use href="#ควัน" x="47" y="-30" />
+        <use href="#ควัน" x="39" y="-30" />
       </g>
       
 
@@ -276,10 +318,12 @@
     </svg>
     <script>
         function changenight(){
-            document.body.style.background = "#185085"
+            document.body.style.background = "#185085";
+          document.querySelector(".sun").style.background = "#FEC062";
         }
         function changemorning(){
-            document.body.style.background = "#FEC062"
+            document.body.style.background = "#FEC062";
+          document.querySelector(".sun").style.background = "#F95B2A";
         }/*#FEC062 สีเหลือง*/
     </script>
   </body>
