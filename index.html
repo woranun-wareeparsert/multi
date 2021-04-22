@@ -28,8 +28,8 @@
             left: 100px;
         }
       .sun{
-	width:13%;
-        height:16%;
+			width:90px;
+        height:90px;
         background: #F95B2A;
         border-radius: 100%;
         position: absolute;
@@ -127,9 +127,9 @@
         <!--ดิน-->
         <g transform="translate(50 350)">
             <path stroke="#f000" stroke-width="1" fill="#9D634B"
-                  d="m0 0 v10 l200 100 l200 -100 v-10 l-200 -100"/>
+                  d="m0 0 v35 l200 100 l200 -100 v-35 l-200 -100"/>
             <path stroke="#f000" stroke-width="1" fill="#0002"
-                d="m0 0 v10 l200 100 l200 -100 v-10 l-200 100"/>
+                d="m0 0 v35 l200 100 l200 -100 v-35 l-200 100"/>
         </g>
         <!--หญ้า-->
         <g transform="translate(50 340)">
@@ -138,7 +138,7 @@
             <path stroke="#f000" stroke-width="1" fill="#0002"
                 d="m0 0 v10 l200 100 l200 -100 v-10 l-200 100"/>
         </g>
-      <!--คลังข้าวมั้ง-->
+      <!--คลังข้าว-->
         <g transform="translate(260 300)">
             <path stroke="#f000" stroke-width="1" fill="#D4301D"
                 d="m0 0 l20 0 l10 -5 l0 -10 v-69 l-5 -7 l-9 -5 l-9 3 l-6 7"/>
@@ -195,12 +195,31 @@
             <path stroke="#f000" stroke-width="1" fill="#E9BFA0"
                 d="m-28 20 l2 -6 l10 -5 l6 6 l1 3 l-2 8 l-10 1"/>
         </g>
-        <!--กังหันมั้ง-->
-        <g transform="translate(390 335)">
-            <path stroke="#f000" stroke-width="1" fill="#6C6967"
-                d="m0 0 l-2 14 l12 6 l16 -5 l4 -7 l-1 -10 l-4 -4"/>
-            <path stroke="#f000" stroke-width="1" fill="#C8C8C8"
-                d="m1 3 l5 -50 l13 -0 l8.5 45 l-5 7 l-10 3"/>
+        <!--กังหัน-->
+        <g transform="translate(390 300)">
+            <path stroke="#f000" stroke-width="1" fill="#767676"
+                d="m3 0 l-5 50 l3 1 l5 -50"/>
+          <path stroke="#f000" stroke-width="1" fill="#AFAFAF"
+                d="m6 2 l-6 50 l3 -2 l5 -50"/>
+          <path stroke="#f000" stroke-width="1" fill="#767676"
+                d="m7 -1 v48 l3 2 l0 -48"/>
+          <path stroke="#f000" stroke-width="1" fill="#AFAFAF"
+                d="m10 1 l0 48 l3 -2 l0 -48"/>
+          <path stroke="#f000" stroke-width="1" fill="#AFAFAF"
+                d="m15 0 l5 46 l3 -2 l-5 -46"/>
+          <path stroke="#f000" stroke-width="1" fill="#767676"
+                d="m13 0 l5 44 l3 2 l-5 -46"/>
+          <path stroke="#f000" stroke-width="1" fill="#989898"
+          d="m0 -11.5 v15 l6 3 l15 -7 v-15 l-7 -3"/>
+        <path stroke="#f000" stroke-width="1" fill="#0002"
+    			d="m0 -11.5 v15 l6 3 l15 -7 v-15 l-14 8"/>
+          <path stroke="#f000" stroke-width="1" fill="#BFBEBD"
+    			d="m7 -27 l5 -3 l1 23 l5 -24 l4 3 l-8 20 l13 -19 l3 5
+               l-15 13 l18 -9 l2 5 l-19 5 l19 0 l-1 5 l-20 -5 l19 9
+               l-3 4 l-17 -13 l14 16 l-5 3 l-10 -22 l5 24 l-5 0 l1 -20
+               l-6 19 l-5 -3 l10 -14 l-14 12 l-3 -4 l17 -9 l-18 4 l0 -5
+               l20 0 l-20 -4 l3 -4 l14 6 l-12 -11 l4 -4 l8 13"/>
+          <circle cx="14" cy="-6" r="6" fill="#767575" />
       </g>
 			<!--ฟามหน้า-->
         <g transform="translate(230 345)">
@@ -237,7 +256,6 @@
           <use href="#ข้าว" x="-57" y="9" />
           <use href="#ข้าว" x="-47" y="3" />
           <use href="#ข้าว" x="-34" y="13" />
-          
         </g>
       <!--ฟาง-->
         <g transform="translate(80 -35)">
@@ -301,7 +319,7 @@
       
 
       <!--grid-->
-     <defs>
+     <!--<defs>
         <pattern id="isometric" width="20" height="10" viewBox="0 0 10 5" patternUnits="userSpaceOnUse" x="0" y="0" >
             <g stroke="#0004" stroke-dasharray="2 1" stroke-width=".25">
               <path d="m0,0 v100"/>
@@ -315,7 +333,9 @@
           </pattern>
           </defs>
         <rect fill="url(#isometric)" width="1000" height="1000"/>
-    </svg>
+    </svg>-->
+    
+    
     <script>
         function changenight(){
             document.body.style.background = "#185085";
@@ -324,7 +344,7 @@
         function changemorning(){
             document.body.style.background = "#FEC062";
           document.querySelector(".sun").style.background = "#F95B2A";
-        }
+        }/*#FEC062 สีเหลือง*/
     </script>
   </body>
 </html>
