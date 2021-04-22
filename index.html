@@ -4,7 +4,7 @@
     <title>-----</title>
     <style>
         body{
-          background:#FEC062;
+          background:#185085;
           margin:1rem;
           text-align:center;
           font-family:sans-serif;
@@ -79,6 +79,19 @@
           <path stroke="#f00" stroke-width="0" fill="#D9AC83"
                 d="m-1 -0.5 v2 l50.5 25 v-2"/>
         </g>
+        <g id="ข้าว">
+          <path stroke="#FED227" stroke-linecap="round" stroke-width="1.5" fill="#0000" d="m13.8 6 v4"/>
+        		<path stroke="#23BD44" stroke-linecap="round" stroke-width="1" fill="#0000" d="m10.5 8.5 q4 1 3 7"/>
+          <path stroke="#23BD44" stroke-linecap="round" stroke-width="1" fill="#0000" d="m17 8.5 q-4 1 -3 6"/>
+        </g>
+        
+        <g id="ลูกเจี๊ยบ">
+        		<circle cx="247" cy="414" r="5" fill="#F4D45B" />
+        		<circle cx="245" cy="412.5" r="0.5" fill="#000" />
+        		<circle cx="249" cy="412.5" r="0.5" fill="#000" />
+        		<path d="m245.5 414 l1 3 l1 -3 " stroke="-"
+  stroke-width="-" fill="#D28921" />
+        </g>
         
       </defs>
         <!--ดิน-->
@@ -99,11 +112,30 @@
         <g transform="translate(260 300)">
             <path stroke="#f000" stroke-width="1" fill="#D4301D"
                 d="m0 0 l20 0 l10 -5 l0 -10 v-69 l-5 -7 l-9 -5 l-9 3 l-6 7"/>
+          	<path stroke="#f000" stroke-width="1" fill="#BC2E21"
+                d="m-1 -30 l21 -11 l0 -40 l-10 0 l-9 -3"/>
+          <path stroke="#f000" stroke-width="1" fill="#BDC3C4"
+                d="m1 -84.5 l9 3 l10 1 l0 -14 l-4 -2 l-9 3 l-6 8"/>
+          <path stroke="#f000" stroke-width="1" fill="#DFE3E3"
+                d="m20 -80.5 l9.5 -4 l-5 -7 l-5 -3.1"/>
+          <path stroke="#f000" stroke-width="1" fill="#BDC3C4"
+                d="m0.3 -55 v2 l9.5 3 l10 0 v-2 l-10 0"/>
+          <path stroke="#f000" stroke-width="1" fill="#DFE3E3"
+                d="m19.3 -67 v2 l10.5 -4 v-2"/>
+          <path stroke="#f000" stroke-width="1" fill="#BDC3C4"
+                d="m0.3 -70 v2 l9.5 3 l10 0 v-2 l-10 0"/>
+          <path stroke="#f000" stroke-width="1" fill="#DFE3E3"
+                d="m19.3 -52 v2 l10.5 -4 v-2"/>
         </g>
         <!--โกดังหน้า-->
         <g transform="translate(230 290)">
             <path stroke="#f000" stroke-width="1" fill="#AF1717"
                   d="m0 0 v35 l70 35 v-35 l-10 -30 l-20 -20 l-20 0"/>
+          <path stroke="#DDDADA" stroke-width="2" fill="#841812"
+                d="m28.3 -10 v15 l16.5 8.5 v-15 l-17 -8"/>
+          <path stroke="#DDDADA" stroke-width="2" fill="#841812"
+                d="m16.3 43 v-20 l32.5 16.5 l0 20"/>
+          <line x1="0" y1="0" x2="99.5" y2="49" style="stroke:#E1DDDB;stroke-width:2" />
         </g>
          <!--โกดังข้าง-->
          <g transform="translate(300 325)">
@@ -120,7 +152,6 @@
             <path stroke="#f000" stroke-width="1" fill="#5F3C22"
                   d="m0 0 l20 -15 l20 0 l73.5 -36.5 l-20 0 l-75 36 l-22 15"/>
         </g>
-        <line x1="230" y1="290" x2="299.5" y2="326" style="stroke:#E1DDDB;stroke-width:2" />
         <!--ถนน-->
         <g transform="translate(230 345)">
             <path stroke="#f000" stroke-width="1" fill="#E9BFA0"
@@ -162,8 +193,18 @@
                    l4 8 l-12 10 l-24 5 l-3 8 l-9 2 l-23 -9"/>
           <use href="#เส้นกำแพง2" x="-32" y="-" />
         <use href="#เส้นกำแพง" x="-50" y="60" />
+          <use href="#ข้าว" x="-68" y="32" />
+          <use href="#ข้าว" x="-77" y="27" />
+          <use href="#ข้าว" x="-86" y="22" />
+          <use href="#ข้าว" x="-60" y="22" />
+          <use href="#ข้าว" x="-70" y="17" />
+          <use href="#ข้าว" x="-47" y="17" />
+          <use href="#ข้าว" x="-57" y="9" />
+          <use href="#ข้าว" x="-47" y="3" />
+          <use href="#ข้าว" x="-34" y="13" />
+          
         </g>
-      <!--ฟามหลัง-->
+      <!--ฟาง-->
         <g transform="translate(80 -35)">
           <path d="M 95 340 q10 -50 25 -3" stroke="#C8721E"
   stroke-width="-" fill="#C8721E" />
@@ -176,9 +217,43 @@
           <path d="M 100 350 q10 -45 25 -3" stroke="#FCC74A"
   stroke-width="-" fill="#FCC74A" />
       </g>
+      <!--ไก่-->
+      <g transform="translate(90,-40)">
+        <path d="m262 396 l1 -6 l3 5" stroke="-"
+  stroke-width="-" fill="#f00" />
+        <path d="m264 396 l2 -6 l3 5" stroke="-"
+  stroke-width="-" fill="#f00" />
+        <path d="m266 396 l4 -6 l1 5" stroke="-"
+  stroke-width="-" fill="#f00" />
+      	<circle cx="267" cy="401" r="8" fill="#D3D2CF" />
+        <circle cx="263" cy="400" r="1" fill="#000" />
+        <circle cx="270.5" cy="400" r="1" fill="#000" />
+        <path d="m265 401 l2 4 l2 -4 " stroke="-"
+  stroke-width="-" fill="#D6A727" />
+        <use href="#ลูกเจี๊ยบ" x="0" y="0" />
+        <use href="#ลูกเจี๊ยบ" x="3" y="-17" />
+        <use href="#ลูกเจี๊ยบ" x="25" y="-31" />
+        <use href="#ลูกเจี๊ยบ" x="44" y="-10" />
+        <use href="#ลูกเจี๊ยบ" x="21" y="3" />
+        <use href="#ลูกเจี๊ยบ" x="41" y="-23" />
+      </g>
+      <!--รถ-->
+      <g transform="translate(150 365)">
+        <path stroke="#f000" stroke-width="1" fill="#FF6C00"
+          d="m-4 2 v6 l12 6 l16 -8 v-6 l-13 -6"/>
+        <path stroke="#f000" stroke-width="1" fill="#FF6C00"
+          d="m4 -8 v12 l12 6 l16 -8 v-12 l-13 -6"/>
+        <path stroke="#f000" stroke-width="1" fill="#0002"
+    			d="m4 -8 v7 l11 5 v-7"/>
+        <path stroke="#f000" stroke-width="1" fill="#0002"
+    			d="m-4 2 v7 l11 5 l25 -12 v-12 l-17 7 v7 l-7 4"/>
+        <circle cx="25" cy="5" r="4" fill="#82807D" />>
+      </g>
+      
+      
 
       <!--grid-->
-      <defs>
+     <defs>
         <pattern id="isometric" width="20" height="10" viewBox="0 0 10 5" patternUnits="userSpaceOnUse" x="0" y="0" >
             <g stroke="#0004" stroke-dasharray="2 1" stroke-width=".25">
               <path d="m0,0 v100"/>
@@ -199,7 +274,7 @@
         }
         function changemorning(){
             document.body.style.background = "#FEC062"
-        }<!--#FEC062 สีเหลือง-->
+        }/*#FEC062 สีเหลือง*/
     </script>
   </body>
 </html>
